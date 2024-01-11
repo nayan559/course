@@ -1,0 +1,1014 @@
+
+
+/*==============================
+  ==============================
+* Author Name: NAYAN DAS
+* Author URL: nayandas.com
+* Theme URL: nayandas.com/
+* Skype: 
+* Description: 
+  ==============================
+  ==============================*/
+  
+
+/*==============================
+  ==============================
+* 00: Global CSS
+* 01: Top Hrader CSS
+* 02: Header CSS
+* 03: Home Section CSS
+* 04: Features Section CSS
+* 05: Services Section CSS
+* 06: Courses Section CSS
+* 07: Testimonial Section CSS
+* 08: Our Clients Section CSS
+* 09: Footer Section CSS
+  ==============================
+  ==============================*/
+
+
+/* 01: Global CSS Start */
+
+/*
+color fc6a42 648cff
+ */
+
+/*Google Fonts Quicksand Source Sans Pro*/
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Open+Sans:400,600,700,800&display=swap');
+
+/* Back To Top Button CSS */
+#button {
+  display: inline-block;
+  background-color: #df4a43;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 4px;
+  margin: 30px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s;
+  z-index: 1000;
+}
+/*#button:hover {
+  cursor: pointer;
+  background-color: #333333;
+}*/
+#button:active {
+  background-color: #df4a43;
+}
+#button::after {
+  content: "\f106";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 40px;
+  color: #fff;
+}
+.show{
+  display: inline-block !important;
+}
+button:focus {
+  outline: 0px auto -webkit-focus-ring-color;
+}
+.navbar-toggler {
+    border: 0px solid transparent;
+}
+.btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0);
+}
+
+/* Nav Manu Hover CSS */
+#mainNav.navbar-shrink .nav-link.active {
+    color: #df4a43;
+    outline: none;
+    border-bottom: 0.25rem solid #df4a43;
+}
+#mainNav.navbar-shrink .nav-link:active {
+    color: #df4a43;
+}
+#mainNav.navbar-shrink .nav-link.active {
+    color: #df4a43;
+    outline: 0;
+    border-bottom: .25rem solid #df4a43;
+}
+#mainNav.navbar-shrink .nav-link:hover {
+    color: #df4a43;
+}
+/* ====================== */
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  color: #7a7c82;
+  line-height: initial;
+  font-size: 18px;
+  font-weight: 400;
+}
+h2{
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  font-size: 45px;
+  margin: 0;
+}
+h1,h3,h4,h5,h6{
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  margin: 0;
+}
+p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  color: #7a7c82;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.4s ease-in-out;
+}
+a:hover{
+  color: #fff;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+ul li{
+  list-style: none;
+  display: inline;
+}
+.text{
+    color: #7a7c82;
+    line-height: 22px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.title{
+  font-size: 18px;
+  font-weight: 500;
+  color: #6f7478;
+}
+.title-heading{
+    font-weight: 800;
+    font-size: 20px;
+}
+.heading{
+    font-size: 28px;
+    font-weight: 800;
+    color: #df4a43;
+}
+.custom-btn{
+  height: 43px;
+  width: 125px;
+  background: transparent;
+  border: 2px solid #df4a43;
+  padding: 0px 0px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  border-radius: 5px;
+  color: #df4a43;
+}
+.form-control:focus {
+    color: #fff;
+    background-color: #fff0;
+    border-color: #fff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+}
+.border {
+  width: 50px;
+  margin: 0 auto;
+  border: 1.5px solid #e4e4e4 !important;
+}
+/* 00: Global CSS END */
+
+
+/* * 01: Top Hrader CSS START */
+.top-header{
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #cecece;
+}
+.top-header-contact{}
+.top-header-contact .phone{
+  display: inline-block;
+  padding: 12px 12px;
+  border-left: 1px solid #cecece;
+  border-right: 1px solid #cecece;
+}
+.top-header-contact .phone p{
+    font-size: 13px;
+}
+.top-header-contact .phone p i{
+    color: #df4a43;
+}
+.top-header-contact .phone p span{}
+
+.top-header-contact .email{
+  display: inline-block;
+  font-size: 13px;
+  padding: 12px 12px;
+  border-right: 1px solid #cecece;
+ }
+.top-header-contact .email p{
+    font-size: 13px;
+}
+.top-header-contact .email p i{
+    color: #df4a43;
+}
+.top-header-contact .email p span{}
+.top-header-social{
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+}
+.top-header-social .social-border {
+    width: 38px;
+    height: 42px;
+    text-align: center;
+    border-left: 1px solid #cecece;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.top-header-social .social-border:hover {
+    background-color: red;
+    color: #fff;
+}
+.top-header-social .border-right{
+}
+.top-header-social .social-border i{
+    padding: 13px 0 0 0;
+    font-size: 14px;
+}
+/* 01: Top Hrader CSS END */
+
+
+/* 02: Header CSS START */
+.header{
+  background-color: #ffffff;
+  transition: 0.4s;
+  box-shadow: -9px 4px 8px 0px #8a8a8a61;
+}
+.logo{
+    width: 85%;
+    transition: 0.4s;
+}
+#mainNav .nav-link {
+    color: #565966;
+    font-weight: 600;
+    text-transform: unset;
+    font-size: 16px;
+}
+.active{
+  color: #df4a43;
+}
+#mainNav .nav-link {
+    transition: 0.4s;
+}
+#mainNav .nav-link:hover {
+    color: rgb(223, 74, 67);
+}
+#mainNav.navbar-shrink {
+    background-color: #fff;
+    padding: 0px 0;
+    transition: 0.4s;
+}
+#mainNav.navbar-shrink .logo{
+    width: 80%;
+}
+.navbar-toggler-icon i{
+    font-size: 22px;
+}
+/* 02: Header CSS END */
+
+
+/* 03: Home Section CSS Start */
+.home{
+  background-image: url(../img/banner/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+.home-content img{}
+.home-content h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: #df4a43;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+.home-content .border{
+    width: 50px;
+    margin: 0 auto;
+    border: 1.5px solid #df4a43 !important;
+}
+
+.home-content{
+    margin: 0 auto;
+}
+.home-content h1{
+    font-size: 45px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 25px;
+    letter-spacing: 2.5px;
+}
+.home-content p{
+    padding-top: 15px;
+    color: #fff;
+    margin-bottom: 100px;
+}
+.swiper-container {
+  height: 100%;
+}
+.swiper-pagination-bullet {
+  width: 16px;
+  height: 8px;
+  display: inline-block;
+  border-radius: 0%;
+  background: #a2a2a2;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+    background: #df4a43 !important;
+}
+/* 03: Home Section CSS End */
+
+
+/* 04: Features Section CSS Start */
+.features{
+  padding: 80px 0;
+  text-align: center;
+}
+.features-heading{}
+.features-heading h2{
+    padding-bottom: 20px;
+}
+.all-feature{
+    margin-top: 65px;
+}
+.features-heading .border{margin-bottom: 20px;}
+.features-heading h3{}
+.feature-online{}
+.feature-online-icon{}
+
+.feature-online-icon i{
+  background-color: #ffffff;
+  border: 1px solid #e4e4e4;
+  color: #df4a43;
+  padding: 25px;
+  font-size: 35px;
+  border-radius: 3px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.feature-online-icon i:hover{
+  background-color: #df4a43;
+  color: #fff;
+}
+.feature-online-content{
+    text-align: left;
+}
+.feature-online-content h3{
+    color: #525354;
+    padding-bottom: 15px;
+}
+.feature-online-content .border{
+    margin: 0;
+    border: 1px solid #e4e4e4 !important;
+    width: 35px;
+}
+.feature-online-content p{
+    padding-top: 15px;
+}
+.feature-online-content p span{
+    color: #df4a43;
+    font-weight: 700;
+    cursor: pointer;
+}
+.feature-padding{
+  padding-top: 65px;
+}
+/* 04: Features Section CSS End */
+
+
+/* 05: Services Section CSS Start */
+.services{
+  background-color: #383c4b;
+  padding: 80px 0;
+  text-align: center;
+}
+.services-heading{}
+.services-heading h2{
+    padding-bottom: 20px;
+}
+.services-heading .border{
+}
+.services-heading h3{
+    padding-top: 20px;
+    color: #fff;
+}
+.service{
+  cursor: pointer;
+}
+.service-icon{
+    border: 2px solid #676a74;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin: 0 auto;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.service-icon i{
+    font-size: 45px;
+    color: #df4a43;
+    padding-top: 28px;
+    transition: 0.4s;
+}
+.all-service-content{
+  margin-top: 65px;
+}
+.service-content{
+    padding-top: 15px;
+}
+.service-content h3{
+    padding-bottom: 15px;
+}
+.service-content .border{
+    border: 1px solid #e4e4e4 !important;
+    width: 35px;
+    transition: 0.4s;
+}
+.service-content p{
+    padding-top: 15px;
+    color: #afb0b4;
+}
+.service:hover .service-icon{
+  background-color: #df4a43;
+}
+.service:hover .service-icon i{
+  color: #fff;
+}
+.service:hover .border{
+  border: 1px solid #df4a43 !important;
+}
+#owl-demo1 .owl-dots{
+  margin-top: 25px;
+}
+#owl-demo1 .owl-dots .owl-dot span {
+    background: #df4a43;
+    transition: 0.4s;
+}
+#owl-demo1 .owl-dots .owl-dot.active span {
+    background: #fffefd;
+}
+/*#owl-demo1 .owl-dots .owl-dot:hover span {
+    background: #df4a43;
+}*/
+/* 05: Services Section CSS End */
+
+
+/* 06: Courses Section CSS Start */
+.courses{
+  background-color: #f6f6f6;
+  padding: 80px 0;
+  text-align: center;
+}
+.courses-heading{}
+.courses-heading h2{
+    padding-bottom: 20px;
+}
+.courses-heading .border{}
+.courses-heading h3{
+    padding-top: 20px;
+}
+.all-course-content{
+    margin-top: 65px;
+}
+.course{
+  border: 1px solid #e4e4e4;
+  background-color: #fff;
+}
+.course .course-img{}
+.course .course-img img{}
+.course .course-content{
+    text-align: left;
+    padding: 25px;
+}
+.course .course-content h3{
+    color: #df4a43;
+    padding-bottom: 15px;
+}
+.course .course-content .course-text{
+    font-size: 13px;
+    color: #c3c3c3;
+    font-weight: 400;
+}
+.course .course-content p{
+    padding-top: 15px;
+}
+.course .course-content .course-btn{
+    margin-top: 15px;
+}
+#owl-demo2 .owl-dots{
+  margin-top: 25px;
+}
+#owl-demo2 .owl-dots .owl-dot span {
+    background: #FFC107;
+    transition: 0.4s;
+}
+#owl-demo2 .owl-dots .owl-dot.active span {
+    background: #df4a43;
+}
+#owl-demo2 .owl-dots .owl-dot:hover span {
+   /* background: #be59e9;*/
+}
+/* 06: Courses Section CSS End */
+
+
+/* 07: Testimonial Section CSS Start */
+.testimonial{
+  background-image: url(../img/testimonial/bg02.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 140px 0;
+}
+.testimonial-content{}
+.testimonial-content .comment{
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+}
+.testimonial-content .comment img{
+    width: 10%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+.testimonial-content .comment p{
+    color: #fff;
+    padding-bottom: 15px;
+}
+.testimonial-content .comment h3{
+    color: #fff;
+    font-weight: 600;
+}
+.testimonial-content .comment h3 .name{
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    color: #e2e2e2;
+}
+.testimonial-content .comment h3 .company-name{
+    font-size: 14px;
+    font-weight: 700;
+    font-style: italic;
+    color: #000;
+}
+#owl-demo3 .owl-dots{
+  margin-top: 25px;
+}
+#owl-demo3 .owl-dots .owl-dot span {
+    background: #fffefd;
+    transition: 0.4s;
+}
+#owl-demo3 .owl-dots .owl-dot.active span {
+    background: #be59e9;
+}
+#owl-demo3 .owl-dots .owl-dot:hover span {
+    /*background: #9C27B0;*/
+}
+/* 07: Testimonial Section CSS End */
+
+
+/* 08: Our Clients Section CSS Satrt */
+.claints{
+  padding: 80px 0;
+}
+.claints-heading{
+  text-align: left;
+  margin-bottom: 65px;
+}
+.claints-heading h2{
+    padding-bottom: 15px;
+}
+.claints-heading .border{
+    margin: 0;
+}
+.all-claint{
+    
+}
+.claint-img{}
+.claint-img img{
+    width: 75% !important;
+    margin: 0 auto;
+}
+#owl-demo4 {}
+#owl-demo4 .owl-dots {
+    position: absolute;
+    right: 0;
+    top: -58px;
+}
+#owl-demo4 .owl-dots .owl-dot span {
+    width: 20px;
+    height: 10px;
+    margin: 0px 0px;
+    margin-left: 10px;
+    background: #df4a43;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 0px;
+}
+
+#owl-demo4 .owl-dots .owl-dot.active span{
+  background: #2c2f3c !important;
+}
+
+
+/* 08: Our Clients Section CSS End */
+
+
+/* 09: Footer Section CSS Start */
+.f-text{}
+.f-title{
+  color: #fff;
+  font-weight: 600;
+}
+.f-sub-title{
+
+font-size: 14px;
+
+font-weight: 600;
+}
+.footer{
+  background-color: #2c2f3c;
+  padding: 80px 0;
+}
+.footer-about{
+}
+.footer-about h3{
+    color: #fff;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+.footer-about p{
+    color: #cbcbcd;
+    padding-bottom: 15px;
+}
+.f-location{
+    padding-bottom: 5px !important;
+}
+.f-location i{
+    padding-right: 15px;
+    color: #df4a6b;
+}
+.f-phone{
+    padding-bottom: 5px !important;
+}
+.f-phone i{
+  padding-right: 15px;
+  color: #df4a6b;
+}
+.f-email {
+    padding-bottom: 0px !important;
+}
+.f-email i{
+  padding-right: 15px;
+  color: #df4a6b;
+}
+.footer-latest-courses{
+}
+.footer-latest-courses h3{
+    padding-bottom: 30px;
+}
+.f-course{}
+.f-course img{
+    width: 100%;
+}
+.f-course-content{
+    padding-left: 15px;
+}
+.f-course-content h4{
+    padding-bottom: 10px;
+}
+.f-course-content p{
+    padding-bottom: 0px !important;
+}
+.f-course-content p span{
+    color: #df4a43;
+}
+.new-course{
+    padding-bottom: 15px;
+}
+.footer-tag{
+    padding-bottom: 4px;
+}
+.footer-tag h3{
+    padding-bottom: 30px;
+}
+.btn-footer-group{
+    padding-bottom: 15px;
+}
+.btn-footer{
+    color: #a9a9ab;
+    font-size: 13px;
+    padding: 5px 7px;
+    background-color: #252833;
+    margin-right: 10px;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+}
+.btn-footer:hover{
+    color: #fff;
+    background-color: #df4a43;
+}
+.footer-social {
+    padding-top: 35px;
+}
+.footer-social h3{
+    padding-bottom: 15px;
+}
+.footer-social .f-social{
+    color: #fff;
+}
+
+.f-social-f {
+  background-color: #5d82d1;
+  width: 25px;
+  height: 25px;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+.f-social-f a{
+  text-align: center;
+    display: block;
+}
+.f-social-t {
+  background-color: #40bff5;
+  width: 25px;
+  height: 25px;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+.f-social-t a{
+  text-align: center;
+    display: block;
+}
+.f-social-p {
+  background-color: #ef4e41;
+  width: 25px;
+  height: 25px;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+.f-social-p a{
+  text-align: center;
+    display: block;
+}
+.f-social-g {
+  background-color: #eb5e4c;
+  width: 25px;
+  height: 25px;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+.f-social-g a{
+  text-align: center;
+    display: block;
+}
+.f-social-v {
+  background-color: #35c6ea;
+  width: 25px;
+  height: 25px;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+.f-social-v a{
+  text-align: center;
+    display: block;
+}
+.f-social-l {
+  background-color: #238cc8;
+  width: 25px;
+  height: 25px;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+.f-social-l a{
+  text-align: center;
+    display: block;
+}
+.f-social-d {
+  background-color: #f7659c;
+  width: 25px;
+  height: 25px;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+.f-social-d a{
+  text-align: center;
+    display: block;
+}
+.footer-social .f-social i{}
+.footer-latest-tweet{}
+.footer-latest-tweet h3{
+  padding-bottom: 30px;
+}
+.footer-latest-tweet .tweet p{
+    padding-bottom: 3px;
+}
+.footer-latest-tweet .tweet span{
+  color: #df4a43;
+}
+.footer-latest-tweet .tweet .tweet-time{}
+.tweet-one{
+    padding-bottom: 17px;
+}
+.tweet-two{}
+footer{
+  background-color: #262934;
+  padding: 10px 0;
+}
+footer .f-left{
+    padding-top: 7px;
+}
+footer .f-left p{}
+footer .f-left span{
+  color: #df4a43;
+}
+footer .f-right{}
+.f-right-nav{
+    padding: 10px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #7a7c82;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.f-right-nav:hover{
+    padding: 10px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #df4a43;
+}
+/* 09: Footer Section CSS End */
+
+
+
+
+
+
+
+
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { ... }
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+.banner-content {
+    padding-top: 300px;
+}
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (max-width: 991.98px) {
+.top-header-contact {
+  text-align: center;
+}
+.top-header-social {
+    justify-content: center;
+}
+.top-header-social .social-border {
+    width: 57px;
+    border-top: 1px solid #cecece;
+}
+.home-content {
+  width: 90%;
+}
+.feature-online {
+    text-align: left;
+}
+.feature-online-content {
+    padding-top: 20px;
+}
+.footer-tag {
+    padding-top: 35px;
+}
+.footer-latest-tweet {
+  padding-top: 35px;
+}
+footer .f-left {
+    padding-top: 7px;
+    text-align: center;
+}
+.justify-content-end {
+    justify-content: center !important;
+}
+.top-header-contact {
+  text-align: center;
+}
+.top-header-contact .phone {
+    border-left: 0px solid #cecece;
+   border-right: 0px solid #cecece;
+    border-bottom: 1px solid #cecece;
+}
+.top-header-contact .email {
+    border-right: 0px solid #cecece;
+    border-bottom: 1px solid #cecece;
+}
+.top-header-social {
+    margin-top: 15px;
+}
+}
+
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (max-width: 767.98px) { 
+.footer-about {
+    padding-bottom: 50px;
+}
+.footer-latest-tweet {
+    padding-top: 50px;
+}
+.footer-social {
+    padding-top: 15px;
+}
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  #button {
+    opacity: 0.5;
+  }
+.header {
+    padding: 0 12px;
+}
+.home {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.home-content h1 {
+    font-size: 40px;
+}
+.feature-online {
+    padding-bottom: 50px;
+}
+.feature-padding {
+    padding-top: 0px;
+}
+.testimonial {
+    padding: 80px 0;
+}
+.testimonial-content .comment img {
+    width: 25%;
+}
+#owl-demo4 .owl-dots {
+    display: none;
+}
+.new-course {
+    padding-bottom: 30px;
+}
+.f-course-content {
+    padding-top: 15px;
+    padding-left: 0;
+}
+.footer-latest-courses h3 {
+    padding-bottom: 20px;
+}
+.footer-tag {
+    padding-top: 20px;
+}
+footer {
+    padding: 20px 0;
+}
+footer .f-left {
+    padding-bottom: 10px;
+}
+.footer-about h3 {
+    padding-bottom: 15px;
+}
+.footer-latest-courses h3 {
+    padding-bottom: 15px;
+}
+.footer-tag h3 {
+    padding-bottom: 15px;
+}
+.footer-latest-tweet h3 {
+    padding-bottom: 15px;
+}
+} 
+
+
+
+
+
